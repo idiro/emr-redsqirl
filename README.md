@@ -27,6 +27,13 @@ aws emr create-cluster --release-label emr-5.0.0 \
   --steps Type=CUSTOM_JAR,Name="HDFS Homes",ActionOnFailure=CONTINUE,Jar="s3://elasticmapreduce/libs/script-runner/script-runner.jar",Args=["s3://idiro-bootstrap/scripts/create_hadoophomes.sh","${AWS_USER}"]
 ```
 
+## Access to Red Sqirl
+
+Red Sqirl runs on the master nodes, port 8842.
+To access it from your browser, please refer to AWS documentation about dynamic port forwarding ([part1](http://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/emr-ssh-tunnel.html) and [part2](http://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/emr-connect-master-node-proxy.html)).
+
+   The Red Sqirl URL would look like: `http://ec2-###-##-##-###.compute.amazonaws.com:8842/redsqirl`
+
 ## The project
 
 The dependencies are:
