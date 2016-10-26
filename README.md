@@ -42,7 +42,7 @@ The dependencies are:
 * [aws](http://docs.aws.amazon.com/cli/latest/userguide/installing.html)
 * Permission to create alarms with cloud watch
 
-The configuration (the default is the conf folder):
+The configurations (by default in the conf folder):
 * `cluster.properties`: setup emails, default aws instances, default users and email address for every users
 * `s3.properties`: s3 paths for bootstrap and data.
 
