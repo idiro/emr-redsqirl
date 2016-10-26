@@ -34,6 +34,8 @@ To access it from your browser, please refer to AWS documentation about dynamic 
 
    The Red Sqirl URL would look like: `http://ec2-###-##-##-###.compute.amazonaws.com:8842/redsqirl`
 
+   Spark is not installed, in this version. However you can try Pig, Hive and Shiny (once configured).
+   
 ## The project
 
 The dependencies are:
