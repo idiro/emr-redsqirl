@@ -21,12 +21,12 @@ if [[ "$ismaster" == "true" ]]; then
 
     sudo useradd redsqirl -G hadoop -m
 
-    REDSQIRL_TAR=redsqirl-2.7.0-1.0-tomcat.tar.gz
+    REDSQIRL_TAR=redsqirl-2.7.0-1.2-tomcat.tar.gz
     REDSQIRL_DOWNLOAD_PATH=/opt/${REDSQIRL_TAR}
-    REDSQIRL_PATH=/opt/redsqirl-2.7.0-1.0
+    REDSQIRL_PATH=/opt/redsqirl-2.7.0-1.2
     REDSQIRL_PORT=8842
     cd /opt
-    sudo wget https://s3-eu-west-1.amazonaws.com/redsqirl/v1.0/redsqirl-2.7.0-1.0-tomcat.tar.gz
+    sudo wget https://s3-eu-west-1.amazonaws.com/redsqirl/v1.2/redsqirl-2.7.0-1.2-tomcat.tar.gz
     sudo tar -zxf $REDSQIRL_DOWNLOAD_PATH
     sudo rm $REDSQIRL_DOWNLOAD_PATH
 
